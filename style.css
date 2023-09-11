@@ -21,6 +21,9 @@ html {
   --text-color-dark: #718355;
   --ultra-dark: #55643c;
   --med-light: #97a97c;
+  --red : red;
+  --blue : blue;
+  --yellow: --yellow;
 }
 
 /* Utility Styles */

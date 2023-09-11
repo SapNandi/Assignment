@@ -12,5 +12,5 @@ if ($name) {
     echo $is_submiteed;
 }
 // Relocating to the original page after posting data
-header("location: http://localhost/Interview/indexx.html");
+header("location: http://localhost/Interview/index.html");
 ?>
