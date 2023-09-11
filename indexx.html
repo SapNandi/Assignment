@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Accessing the funtion of the javascript to use in form -->
+    <script type="text/javascript" src="function.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Adding FontAwsome Icons -->
+    <script
+      src="https://kit.fontawesome.com/fbd84718f3.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Assignment-Saptarshi Nandi</title>
+  </head>
+
+  <body>
+    <!-- Landing Page Header section -->
+    <div class="background">
+      <header class="header">
+        <a href="#" class="logo">SAPTARSHI</a>
+        <div class="nav">
+          <ul class="items">
+            <li class="item"><a href="#home" class="menu">Home</a></li>
+            <li class="item"><a href="#contact" class="menu">Contacts</a></li>
+            <li class="item"><a href="#" class="menu">About</a></li>
+            <li class="item"><a href="#" class="menu">Services</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars hamburger" onclick="handleClick()"></i>
+      </header>
+      <!-- Landing Page Body -->
+      <section id="home" class="hero">
+        <div class="left">
+          <div class="title">
+            <h1>Go Grab Your</h1>
+            <h1>Shoe Now!!</h1>
+          </div>
+          <div class="subtext">
+            <p>The best platform of stylish footwear in Bharat for all!</p>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit,ipsum!</p> -->
+            <p>The best platform of stylish footwear in Bharat all!</p>
+            <p>The best platform of stylish</p>
+          </div>
+          <div class="btn">
+            <h4>Shop Now</h4>
+          </div>
+        </div>
+        <div class="right">
+          <img src="./Images/Product.png" alt="" />
+        </div>
+      </section>
+
+      <!-- Contact Form -->
+      <section id="contact" class="contact">
+        <div class="adjustment">
+          <a
+            href="https://linkedin.com/in/saptarshi-nandi-550216234/"
+            target="_blank"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+          <a
+            href="https://instagram.com/saptarshinandi?igshid=MzMyNGUyNmU2YQ=="
+            target="_blank"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://github.com/SapNandi" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </div>
+        <div class="container">
+          <h2>Contacts</h2>
+
+          <form name="contactForm" action="index.php" onsubmit="return validateForm()" method="post">
+            <!-- <label for="name">Name</label> -->
+            <div class="field">
+              <span><i class="fa-solid fa-user"></i></span>
+              <input type="text" id="name" name="name" placeholder="Name" required/>
+            </div>
+
+            <!-- <label for="email">Email</label> -->
+            <div class="field">
+              <span><i class="fa-solid fa-envelope"></i></span>
+              <input type="email" id="email" name="email" placeholder="Email" required/>
+            </div>
+
+            <!-- <label for="phone">Phone</label> -->
+            <div class="field">
+              <span><i class="fa-solid fa-phone"></i></span>
+              <input type="phone" id="phone" name="phone" placeholder="Phone" required/>
+            </div>
+
+            <!-- <label for="desc">Message</label> -->
+            <div class="field">
+              <textarea
+                name="desc"
+                id="desc"
+                cols="30"
+                rows="10"
+                placeholder="Write Your Text!"
+                required
+              ></textarea>
+            </div>
+
+            <button class="btn" type="submit" onclick="verify()">Submit</button>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <script type="text/javascript" src="function.js"></script>
+  </body>
+</html>

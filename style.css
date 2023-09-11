@@ -1,0 +1,517 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600&family=Poppins:wght@400;500;600;700&family=Roboto&display=swap");
+
+/* Reseting the default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Setting the root colors */
+:root {
+  --main-bg-color: #87986a;
+  --light-bg-color: #e9f5db;
+  --highlight-color: #718355;
+  --text-color-light: #e9f5db;
+  --text-color-dark: #718355;
+  --ultra-dark: #55643c;
+  --med-light: #97a97c;
+}
+
+/* Utility Styles */
+a {
+  text-decoration: none;
+}
+li {
+  font-size: 1rem;
+  list-style: none;
+  font-family: "Baloo Bhaijaan 2", sans-serif;
+}
+
+/* Background original */
+.background {
+  width: 100%;
+  height: 200vh;
+  overflow: hidden;
+  background: linear-gradient(
+    90deg,
+    var(--main-bg-color) 60%,
+    var(--light-bg-color) 40%
+  );
+}
+
+/* Header Section */
+.background header {
+  min-width: 100%;
+  height: 12vh;
+  /* border: 1px solid red; */
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.background header .logo {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-color-light);
+}
+
+.background header .nav {
+  height: 100%;
+  width: 30%;
+  /* display: block;x */
+}
+
+.background header .nav .items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 1.8rem;
+}
+
+.background header .nav .items .item {
+  width: fit-content;
+  height: fit-content;
+  /* border: 1px solid black; */
+  padding: 3px 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.background header .nav .items .item .menu {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--text-color-dark);
+  transition: 0.3s ease-in-out;
+}
+
+.background header .nav .items .item:hover {
+  background-color: var(--highlight-color);
+  cursor: pointer;
+}
+
+.background header .nav .items .item:hover .menu {
+  color: var(--text-color-light);
+}
+
+/* Body Section */
+
+.hero {
+  width: 100%;
+  height: 88vh;
+  /* border: 1px solid black; */
+  display: flex;
+  position: relative;
+}
+
+/* Body Section left Part */
+.hero .left {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  padding-left: 5rem;
+  /* align-items: center; */
+  flex-direction: column;
+  /* border: 1px solid black; */
+}
+
+.hero .left .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 1.3rem;
+}
+
+.hero .left .title h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 5rem;
+  line-height: 5rem;
+  letter-spacing: 2px;
+  color: var(--ultra-dark);
+}
+
+.hero .left .subtext {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.hero .left .subtext p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  color: var(--ultra-dark);
+}
+
+.hero .left .btn {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--ultra-dark);
+  margin-bottom: 6rem;
+  transition: 0.1s all ease-in-out;
+}
+
+.hero .left .btn:hover {
+  cursor: pointer;
+  background-color: var(--ultra-dark);
+}
+
+.hero .left .btn h4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--text-color-light);
+}
+
+/* Body Section Right Part */
+.hero .right {
+  width: 40%;
+  height: 100%;
+  /* border: 1px solid black; */
+  display: flex;
+  position: relative;
+}
+
+.hero .right img {
+  position: absolute;
+  left: -10rem;
+  object-fit: contain;
+  width: 38rem;
+  min-width: 10rem;
+  transform: rotateY(-180deg);
+}
+
+/* Contact Section */
+.contact {
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact .container {
+  position: relative;
+  width: 400px;
+  height: 500px;
+  background-color: var(--light-bg-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  z-index: 1;
+  /* border: 1px solid black; */
+}
+
+.contact .adjustment {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  align-items: center;
+  bottom: 6.3rem;
+  right: 31rem;
+  height: 20rem;
+  width: 18rem;
+  background-color: var(--ultra-dark);
+  padding: 0 20px;
+}
+
+.contact .adjustment a {
+  align-self: end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact .adjustment a i {
+  font-size: 2rem;
+  color: var(--light-bg-color);
+}
+
+.contact .container h2 {
+  font-size: 3rem;
+  font-family: "Poppins", sans-serif;
+  color: var(--ultra-dark);
+  margin-top: 4rem;
+}
+
+.contact .container form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  gap: 2rem;
+}
+
+.contact .container form .btn {
+  padding: 5px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid var(--ultra-dark); */
+  border: none;
+  outline: none;
+  margin-bottom: 6rem;
+  transition: 0.1s all ease-in-out;
+  font-family: "Baloo Bhaijaan 2", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: var(--text-color-light);
+  background-color: var(--ultra-dark);
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+/* Adding Icons to the form */
+.field {
+  display: flex;
+  width: 80%;
+  height: 30px;
+  border: 1px solid var(--med-light);
+}
+
+.field span {
+  height: 29px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-right: 1px solid var(--med-light);
+  /* border: 1px solid var(--med-light); */
+  background-color: var(--ultra-dark);
+}
+
+i {
+  font-size: 1.2rem;
+  color: var(--light-bg-color);
+}
+
+.field input {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+  font-family: "Roboto", sans-serif;
+  color: var(--text-color-dark);
+}
+
+textarea {
+  width: 100%;
+  height: 3rem;
+  border: 1px solid var(--med-light);
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10px;
+  vertical-align: middle;
+  font-family: "Roboto", sans-serif;
+  color: var(--text-color-dark);
+}
+
+/* Coding the responsive hamburger button*/
+
+.hamburger {
+  position: absolute;
+  display: none;
+  right: 0;
+  margin-right: 2.5rem;
+}
+
+
+/* Code for responsiveness */
+@media screen and (max-width: 1200px) {
+  .background header .nav {
+    /* display: none; */
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 2rem;
+    color: var(--ultra-dark);
+  }
+
+  .background header .nav .items {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: fixed;
+    left: -85px;
+    top: 0;
+    width: 0px !important;
+    z-index: 100 !important;
+    background-color: var(--highlight-color);
+    justify-content: start;
+    transition: 0.5s all ease-in-out;
+  }
+
+  .background header .nav .modified {
+    width: 300px !important;
+    left: 0;
+    transition: 0.5s all ease-in-out;
+  }
+
+  .background header .nav .items .item {
+    width: 100%;
+    height: 50px;
+    /* border: 1px solid black; */
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .background header .nav .items .item .menu {
+    color: var(--light-bg-color);
+  }
+
+  .hero .left {
+    padding-left: 2rem;
+  }
+
+  .hero .left .title h1 {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+
+  .hero .left .subtext p {
+    font-size: 0.9rem;
+  }
+
+  .hero .right img {
+    width: 26rem;
+    left: -8rem;
+    top: 13rem;
+  }
+
+  .adjustment {
+    display: none !important;
+  }
+
+  .contact .container {
+    width: 525px;
+    height: 560px;
+    gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .logo {
+    font-size: 1.8rem !important;
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 1.8rem;
+    color: var(--ultra-dark);
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero .left {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .hero .left .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hero .left .title h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  .hero .left .subtext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero .left .subtext p {
+    font-size: 0.7rem;
+  }
+
+  .hero .right {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero .right img {
+    position: absolute;
+    left: 7rem;
+    object-fit: contain;
+    width: 13rem;
+    min-width: 10rem;
+    transform: rotateY(-180deg);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .logo {
+    font-size: 1.2rem !important;
+  }
+  .hamburger {
+    display: block;
+    font-size: 1.5rem;
+    color: var(--ultra-dark);
+  }
+
+  .hero .left .title h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .hero .right img {
+    position: absolute;
+    left: 7rem;
+    top: 1rem;
+    object-fit: contain;
+    width: 16rem;
+    min-width: 10rem;
+    transform: rotateY(-180deg);
+  }
+}
